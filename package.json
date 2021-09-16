@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahul-Shrimali/portfolio.git"
+  },
+  "author": "Rahul Shrimali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahul-Shrimali/portfolio/issues"
+  },
+  "homepage": "https://github.com/Rahul-Shrimali/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
