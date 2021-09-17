@@ -1,0 +1,21 @@
+.about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.team-mem{
+    color: white;
+    height: 320px;
+    background: linear-gradient(85deg,rgb(105, 100, 101),#000000);
+    box-shadow: -2rem 2rem 3rem -2rem;
+    border-radius: 28px;
+    perspective-origin: right;
+    perspective: 2100;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.team-mem:hover{
+    transform: perspective(500px)  translateZ(50px);
+}
