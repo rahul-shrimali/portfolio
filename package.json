@@ -4,7 +4,10 @@
   "description": "This is my Portfolio",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts","imagemin": "imagemin images/* -o dist/images",
+    "usemin": "usemin contactUs.html -d dist --htmlmin -o dist/contactUs.html  && usemin index.html -d dist --htmlmin -o dist/index.html && usemin work.html -d dist --htmlmin -o dist/work.html",
+    "build": " npm run copyfonts && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,13 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.0.0",
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "imagemin-cli": "^3.0.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
   }
 }
